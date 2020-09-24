@@ -1,0 +1,59 @@
+/*Test stylesheet for messing around*/
+
+h1 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+li {
+    list-style-type: square;
+}
+
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+span.special {
+    font-style: oblique;
+    color: orchid;
+}
+
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+em {
+    border: inset;
+}
+
+.boxborder {
+    border: 5px solid black;
+    /*transform: rotate(-5deg);*/
+}
+
+.box1 {
+    margin: 5px;
+    padding: 20px;
+    width: calc(90% - 50px);
+    background-color: rebeccapurple;
+    color: white;
+    
+}
+
+
+body {
+    background-color: pink;
+  }
+
+  /* if the window is at least 30em wide, display grey background */
+  @media (min-width: 30em) {
+    body {
+      background-color: #ccc;
+    }
+  }

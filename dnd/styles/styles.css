@@ -1,0 +1,67 @@
+/* Main Style sheet */
+/* Target classes with . prefix. ID's are targeted with #.
+		There should only be unique ID's in the html. 
+		Classes can reappear multiple time - hence the name.
+		
+		you can also target html elements themselves with just the tag. ie. "body" or "h1". this will target every element with that tag, regardless of class or id.
+		
+		css also reads from top to bottom. So items at the bottom can override items at the top. 
+	
+		*/
+		
+		body {
+			background-color: #ccc;
+		}
+		
+		#background {
+			background-color:#9F9393;
+			margin:0 auto; /* margin is the space added around the element from the edge pushing out -  this sets the margin of the top and bottom to 0px, and auto for the left and right. essentially we are centering this item */ 
+			padding:10px 0; /* padding is the space added around the element from the edge pushing in */
+			width:80%; /* values can be in percentages, pixels, pts, and ems.  recommend percentages for mobile considerations */
+			height: 100%;
+		}
+		
+		.wrapper {
+			width:50%;
+			margin:0 auto;
+			background-color:#fff;
+		}
+		
+		h1 {
+			padding-top:10px;
+			
+		}
+		
+		
+		h1, h2 {   /* you can target multiple things at once using a comma to separate */
+			text-align: center;
+			border-bottom:1px solid #ccc;
+			
+		}
+		
+		h3 {
+			margin-top:25px;
+		}
+		
+		#footer {
+			background-color:#562E48;
+			color:#fff; /* this is the color of the text */
+		}
+		
+		
+		#footer p { /* having a space between the targets is how you target children. so you target all p tags, but only p tags that are within the footer */
+			font-weight: bold;
+			
+		}
+		
+		#footer p.legal { 	/* this is targeting the #footer, all p tags, but only with the .legal class */
+			text-decoration: underline;
+        }
+        
+        li {
+            list-style-type: square;
+		}
+		
+		a:hover {
+			text-decoration: none;
+		}
